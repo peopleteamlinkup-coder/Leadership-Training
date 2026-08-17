@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#06203B" />
+  <title>Link Up | Aspiring Leaders Roleplay</title>
+  <meta
+    name="description"
+    content="Aspiring Leaders Link Up Session 2 leadership roleplay simulation."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+
+    <!-- SIGN UP -->
+    <main id="signupView" class="view view-active">
+      <section class="signup-layout">
+        <div class="brand-panel">
+          <div class="brand-lockup">
+            <div class="logo-mark" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div>
+              <p class="brand-name">LINK UP</p>
+              <p class="brand-tagline">Talent Beyond Borders</p>
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <span class="eyebrow">ASPIRING LEADERS</span>
+            <h1>Practice leadership before the real conversation happens.</h1>
+            <p>
+              Step into a short, guided leadership scenario designed for
+              Aspiring Leaders Link Up Session 2.
+            </p>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-card-number">02</div>
+            <div>
+              <strong>Session 2</strong>
+              <span>Role Clarity &amp; Leadership Expectations</span>
+            </div>
+          </div>
+
+          <div class="mountain-art" aria-hidden="true">
+            <div class="mountain mountain-back"></div>
+            <div class="mountain mountain-mid"></div>
+            <div class="mountain mountain-front"></div>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <div class="form-wrap">
+            <span class="pill">LEADERSHIP SIMULATION</span>
+            <h2>Welcome to the roleplay.</h2>
+            <p class="intro">
+              Enter your details to begin. Your responses will be used only
+              for this learning activity.
+            </p>
+
+            <form id="signupForm" class="signup-form">
+              <label>
+                <span>Name</span>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  maxlength="120"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Address</span>
+                <input
+                  id="address"
+                  name="address"
+                  type="text"
+                  autocomplete="street-address"
+                  placeholder="Your address"
+                  maxlength="240"
+                  required
+                />
+              </label>
+
+              <label>
+                <span>Location</span>
+                <input
+                  id="location"
+                  name="location"
+                  type="text"
+                  placeholder="City / Country"
+                  maxlength="120"
+                  required
+                />
+              </label>
+
+              <button class="primary-btn" type="submit">
+                Begin Simulation
+                <span aria-hidden="true">→</span>
+              </button>
+            </form>
+
+            <div class="privacy-note">
+              <span aria-hidden="true">●</span>
+              <p>
+                This is a fictional learning simulation. Please do not enter
+                confidential or identifying information about real team members.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SIMULATION -->
+    <main id="simulationView" class="view">
+      <header class="topbar">
+        <div class="brand-lockup brand-lockup-small">
+          <div class="logo-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div>
+            <p class="brand-name">LINK UP</p>
+            <p class="brand-tagline">Aspiring Leaders</p>
+          </div>
+        </div>
+
+        <div class="topbar-meta">
+          <span>Session 2</span>
+          <span class="dot"></span>
+          <span>The Strong Performer</span>
+        </div>
+
+        <button id="restartBtn" class="text-btn" type="button">Restart</button>
+      </header>
+
+      <section class="simulation-shell">
+        <aside class="scenario-panel">
+          <div>
+            <span class="eyebrow teal">SCENARIO</span>
+            <h2>The Strong Performer</h2>
+            <p class="scenario-summary">
+              One of your strongest team members has started arriving late
+              several times. Their work remains excellent and they are well
+              liked by the team.
+            </p>
+          </div>
+
+          <div class="leadership-lens">
+            <p class="lens-title">Leadership lens</p>
+
+            <div class="lens-item">
+              <span class="lens-num">01</span>
+              <div>
+                <strong>Principle</strong>
+                <p>How do you keep expectations clear and consistent?</p>
+              </div>
+            </div>
+
+            <div class="lens-item">
+              <span class="lens-num">02</span>
+              <div>
+                <strong>People Impact</strong>
+                <p>How do curiosity and empathy shape the conversation?</p>
+              </div>
+            </div>
+
+            <div class="lens-item">
+              <span class="lens-num">03</span>
+              <div>
+                <strong>Process</strong>
+                <p>What next steps and follow up are appropriate?</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-card">
+            <div class="progress-label">
+              <span>Your progress</span>
+              <span id="progressText">Step 1 of 4</span>
+            </div>
+            <div class="progress-track">
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="roleplay-panel">
+          <div id="roleplayContent" class="roleplay-content">
+
+            <!-- STEP 1 -->
+            <section id="step1" class="sim-step sim-step-active">
+              <div class="step-heading">
+                <span class="step-kicker">PART 1</span>
+                <h1>Start the conversation</h1>
+                <p>Read Alex's message, then choose the approach closest to what you would do.</p>
+              </div>
+
+              <div class="message alex-message">
+                <div class="avatar">A</div>
+                <div>
+                  <div class="message-name">Alex <span>Team Member</span></div>
+                  <p>
+                    I know I've been coming in late, but my work hasn't suffered.
+                    I'm still one of the strongest performers on the team.
+                    Is this really a big deal?
+                  </p>
+                </div>
+              </div>
+
+              <div class="choice-group">
+                <button class="choice-card" data-first-path="curious" type="button">
+                  <span class="choice-letter">A</span>
+                  <span>
+                    <strong>Explore first</strong>
+                    <small>Ask what has been happening while acknowledging the attendance concern.</small>
+                  </span>
+                </button>
+
+                <button class="choice-card" data-first-path="direct" type="button">
+                  <span class="choice-letter">B</span>
+                  <span>
+                    <strong>Lead with the standard</strong>
+                    <small>Explain that attendance expectations apply regardless of performance.</small>
+                  </span>
+                </button>
+
+                <button class="choice-card" data-first-path="ignore" type="button">
+                  <span class="choice-letter">C</span>
+                  <span>
+                    <strong>Let it go for now</strong>
+                    <small>Focus on results because Alex is still delivering strong work.</small>
+                  </span>
+                </button>
+              </div>
+
+              <label class="response-box">
+                <span>What would you actually say?</span>
+                <textarea
+                  id="response1"
+                  rows="5"
+                  maxlength="3000"
+                  placeholder="Type your response to Alex..."
+                ></textarea>
+                <small><span id="counter1">0</span> / 3000</small>
+              </label>
+
+              <button id="continue1" class="primary-btn" type="button" disabled>
+                Continue
+                <span aria-hidden="true">→</span>
+              </button>
+            </section>
+
+            <!-- STEP 2 -->
+            <section id="step2" class="sim-step">
+              <div class="step-heading">
+                <span class="step-kicker">PART 2</span>
+                <h1>Notice what your approach creates.</h1>
+                <p>Alex reacts differently depending on the approach you selected.</p>
+              </div>
+
+              <div class="message alex-message">
+                <div class="avatar">A</div>
+                <div>
+                  <div class="message-name">Alex <span>Team Member</span></div>
+                  <p id="alexReply1"></p>
+                </div>
+              </div>
+
+              <div class="reveal-card">
+                <span class="reveal-label">NEW INFORMATION</span>
+                <h3>There is more going on.</h3>
+                <p>
+                  You learn that Alex is dealing with something difficult at home,
+                  which has been making mornings unpredictable.
+                </p>
+              </div>
+
+              <p class="prompt-question">
+                With this new information, what would you do next?
+              </p>
+
+              <div class="choice-group compact">
+                <button class="choice-card" data-second-path="support-accountability" type="button">
+                  <span class="choice-letter">A</span>
+                  <span>
+                    <strong>Support + accountability</strong>
+                    <small>Explore reasonable support while agreeing on expectations and follow up.</small>
+                  </span>
+                </button>
+
+                <button class="choice-card" data-second-path="support-only" type="button">
+                  <span class="choice-letter">B</span>
+                  <span>
+                    <strong>Focus only on support</strong>
+                    <small>Excuse the lateness so Alex has room to manage the situation.</small>
+                  </span>
+                </button>
+
+                <button class="choice-card" data-second-path="policy-only" type="button">
+                  <span class="choice-letter">C</span>
+                  <span>
+                    <strong>Focus only on policy</strong>
+                    <small>Reinforce attendance expectations without exploring flexibility.</small>
+                  </span>
+                </button>
+              </div>
+
+              <label class="response-box">
+                <span>What would you actually say now?</span>
+                <textarea
+                  id="response2"
+                  rows="5"
+                  maxlength="3000"
+                  placeholder="Type your next response to Alex..."
+                ></textarea>
+                <small><span id="counter2">0</span> / 3000</small>
+              </label>
+
+              <button id="continue2" class="primary-btn" type="button" disabled>
+                Finish Conversation
+                <span aria-hidden="true">→</span>
+              </button>
+            </section>
+
+            <!-- STEP 3 -->
+            <section id="step3" class="sim-step">
+              <div class="step-heading">
+                <span class="step-kicker">PART 3</span>
+                <h1>Close the conversation.</h1>
+                <p>Here is how Alex might respond to the direction you chose.</p>
+              </div>
+
+              <div class="message alex-message">
+                <div class="avatar">A</div>
+                <div>
+                  <div class="message-name">Alex <span>Team Member</span></div>
+                  <p id="alexReply2"></p>
+                </div>
+              </div>
+
+              <div class="reflection-intro">
+                <h3>Before you see the reflection...</h3>
+                <p>
+                  Think about the balance you created between fairness,
+                  empathy, expectations and follow through.
+                </p>
+              </div>
+
+              <button id="showReflection" class="primary-btn" type="button">
+                View Leadership Reflection
+                <span aria-hidden="true">→</span>
+              </button>
+            </section>
+
+            <!-- STEP 4 -->
+            <section id="step4" class="sim-step">
+              <div class="completion-badge">SIMULATION COMPLETE</div>
+              <div class="step-heading final-heading">
+                <h1>Your leadership reflection</h1>
+                <p>
+                  This is not a score. Use the reflection to notice what your
+                  choices prioritized and what you may want to strengthen.
+                </p>
+              </div>
+
+              <div class="reflection-grid">
+                <article class="reflection-card">
+                  <div class="reflection-icon">P</div>
+                  <span>PRINCIPLE</span>
+                  <h3>Clear expectations matter.</h3>
+                  <p id="principleFeedback"></p>
+                </article>
+
+                <article class="reflection-card">
+                  <div class="reflection-icon">I</div>
+                  <span>PEOPLE IMPACT</span>
+                  <h3>Curiosity changes the conversation.</h3>
+                  <p id="peopleFeedback"></p>
+                </article>
+
+                <article class="reflection-card">
+                  <div class="reflection-icon">P</div>
+                  <span>PROCESS</span>
+                  <h3>Support needs a next step.</h3>
+                  <p id="processFeedback"></p>
+                </article>
+              </div>
+
+              <div class="final-reflection">
+                <span class="reveal-label">REFLECTION QUESTION</span>
+                <h2 id="reflectionQuestion"></h2>
+                <textarea
+                  id="finalReflection"
+                  rows="4"
+                  maxlength="3000"
+                  placeholder="Optional: capture your reflection here..."
+                ></textarea>
+              </div>
+
+              <div class="finish-actions">
+                <button id="saveReflectionBtn" class="primary-btn" type="button">
+                  Save Reflection
+                </button>
+                <button id="finishBtn" class="secondary-btn" type="button">
+                  Finish
+                </button>
+              </div>
+
+              <p id="saveStatus" class="save-status" role="status"></p>
+            </section>
+
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- COMPLETION -->
+    <main id="completeView" class="view">
+      <section class="complete-screen">
+        <div class="complete-card">
+          <div class="brand-lockup centered">
+            <div class="logo-mark" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div>
+              <p class="brand-name">LINK UP</p>
+              <p class="brand-tagline">Talent Beyond Borders</p>
+            </div>
+          </div>
+
+          <div class="checkmark">✓</div>
+          <span class="pill">SESSION 2</span>
+          <h1>Roleplay complete.</h1>
+          <p>
+            Thank you for completing <strong>The Strong Performer</strong>.
+            Bring one insight from your reflection into the Link Up discussion.
+          </p>
+          <button id="startAgainBtn" class="secondary-btn" type="button">
+            Start Again
+          </button>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
