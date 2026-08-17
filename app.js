@@ -1,5 +1,5 @@
 const APPS_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwB9_zRq3XNwAlparwPH6kdKlhZyMXHAXoSXMx5Vg3geb0AAvijWDynyL06fQBbGWM/exec";
+  "https://script.google.com/macros/s/AKfycbxJzbQfjY0m0N_VHggABRxszn-PlsEzr1t3ezD2qQ3q8w2on5MsYVS4lBNvWDeE07s/exec";
 
 const PROGRAM = "Aspiring Leaders Link Up";
 const SESSION = "Session 2";
