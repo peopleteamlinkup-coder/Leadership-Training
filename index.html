@@ -76,28 +76,16 @@
               </label>
 
               <label>
-                <span>Address</span>
-                <input
-                  id="address"
-                  name="address"
-                  type="text"
-                  autocomplete="street-address"
-                  placeholder="Your address"
-                  maxlength="240"
+                <span>Office Location</span>
+                <select
+                  id="officeLocation"
+                  name="officeLocation"
                   required
-                />
-              </label>
-
-              <label>
-                <span>Location</span>
-                <input
-                  id="location"
-                  name="location"
-                  type="text"
-                  placeholder="City / Country"
-                  maxlength="120"
-                  required
-                />
+                >
+                  <option value="" selected disabled>Select your office location</option>
+                  <option value="Palawan">Palawan</option>
+                  <option value="Cavite">Cavite</option>
+                </select>
               </label>
 
               <button class="primary-btn" type="submit">
