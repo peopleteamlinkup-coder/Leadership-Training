@@ -1,5 +1,5 @@
 const APPS_SCRIPT_URL =
-  "https://script.google.com/a/macros/linkupbpo.com/s/AKfycbwB9_zRq3XNwAlparwPH6kdKlhZyMXHAXoSXMx5Vg3geb0AAvijWDynyL06fQBbGWM/exec";
+  "https://script.google.com/macros/s/AKfycbwB9_zRq3XNwAlparwPH6kdKlhZyMXHAXoSXMx5Vg3geb0AAvijWDynyL06fQBbGWM/exec";
 
 const PROGRAM = "Aspiring Leaders Link Up";
 const SESSION = "Session 2";
@@ -8,8 +8,7 @@ const SCENARIO = "The Strong Performer";
 const state = {
   participant: {
     name: "",
-    address: "",
-    location: ""
+    officeLocation: ""
   },
   sessionId: "",
   firstPath: "",
@@ -113,8 +112,7 @@ function wireSignup() {
 
     state.participant = {
       name: document.getElementById("name").value.trim(),
-      address: document.getElementById("address").value.trim(),
-      location: document.getElementById("location").value.trim()
+      officeLocation: document.getElementById("officeLocation").value
     };
 
     await saveSimulation({
@@ -275,7 +273,7 @@ function wireCompletion() {
       status: "Completed"
     });
 
-    status.textContent = "Reflection sent to the facilitator response sheet.";
+    status.textContent = "Reflection submitted. Check the facilitator Sheet to confirm receipt.";
   });
 
   document.getElementById("finishBtn").addEventListener("click", async () => {
